@@ -1,5 +1,5 @@
 """
-DecodeLabs - Data Analytics Internship - Project 1
+
 Data Cleaning & Preparation Script
 
 This script performs the 3-phase cleaning process from the training kit:
@@ -28,11 +28,7 @@ def phase1_handle_missing_values(df: pd.DataFrame) -> pd.DataFrame:
     """
     Fill or flag missing values.
 
-    IMPORTANT LESSON: not every blank cell should be statistically imputed
-    (mean/median/mode). A blank can also be a legitimate category meaning
-    "this doesn't apply" or "none was used." Check what the blank *means*
-    before deciding how to fill it.
-
+    
     In this dataset, only CouponCode has nulls (309 / 1200 rows). A blank
     CouponCode means "no coupon was applied to this order" -- it is real
     information, not noise. So we encode it explicitly rather than guessing
