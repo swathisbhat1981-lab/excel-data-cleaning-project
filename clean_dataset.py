@@ -2,7 +2,7 @@
 
 Data Cleaning & Preparation Script
 
-This script performs the 3-phase cleaning process from the training kit:
+
   Phase 1: Strategic Imputation (handle missing values)
   Phase 2: Integrity Audit (remove duplicates)
   Phase 3: Speak One Language (standardize formatting)
@@ -56,9 +56,7 @@ def phase1_handle_missing_values(df: pd.DataFrame) -> pd.DataFrame:
 def phase2_remove_duplicates(df: pd.DataFrame) -> pd.DataFrame:
     """
     Audit for duplicate records.
-    Checks full-row duplicates AND duplicate unique keys (OrderID, TrackingNumber),
-    since two rows can differ slightly (e.g. re-typed) but still represent the
-    same real-world order.
+    
     """
     full_dupes = df.duplicated().sum()
     order_id_dupes = df["OrderID"].duplicated().sum()
