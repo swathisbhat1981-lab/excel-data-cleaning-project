@@ -17,7 +17,7 @@ The pipeline performs:
 - Numeric precision enforcement
 - Final data-quality validation
 
-## Data Cleaning Steps:
+## Data Cleaning Steps
 
 ### 1. Missing Values
 
@@ -27,7 +27,7 @@ Missing CouponCode values were replaced with:
 
 This was treated as a meaningful category rather than using mean, median, or mode imputation.
 
-### 2. Duplicate Detection:
+### 2. Duplicate Detection
 
 The dataset was checked for:
 
@@ -37,31 +37,31 @@ The dataset was checked for:
 
 No duplicates were found.
 
-### 3. Date Standardization:
+### 3. Date Standardization
 
 Dates were converted into ISO 8601 format:
 
 `YYYY-MM-DD`
 
-### 4. Numeric Formatting:
+### 4. Numeric Formatting
 
 UnitPrice and TotalPrice values were standardized to two decimal places.
 
-### 5. Validation:
+### 5. Validation
 
 The final dataset passed the validation checks:
 
 - Duplicate Orders: 0
 - Incorrectly formatted dates: 0
 
-## Technologies Used:
+## Technologies Used
 
 - Python
 - Pandas
 - NumPy
 - OpenPyXL
 
-## How to Run:
+## How to Run
 
 Install the required libraries:
 
