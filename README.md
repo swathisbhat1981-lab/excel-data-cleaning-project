@@ -2,11 +2,11 @@
 
 A Python-based data cleaning project using Pandas and NumPy to clean, validate, and standardize an Excel dataset.
 
-Project Overview
+## Project Overview
 
 This project demonstrates a simple data-cleaning pipeline for an Excel dataset containing 1,200 rows and 14 columns.
 
-The pipeline performs:
+## The pipeline performs:
 
 - Missing value handling
 - Duplicate detection
@@ -18,7 +18,7 @@ The pipeline performs:
 - Final data-quality validation
  Data Cleaning Steps
 
- 1. Missing Values
+## 1. Missing Values
 
 Missing CouponCode values were replaced with:
 
@@ -26,7 +26,7 @@ Missing CouponCode values were replaced with:
 
 This was treated as a meaningful category rather than using mean, median, or mode imputation.
 
- 2. Duplicate Detection
+## 2. Duplicate Detection
 
 The dataset was checked for:
 
@@ -36,17 +36,17 @@ The dataset was checked for:
 
 No duplicates were found.
 
- 3. Date Standardization
+## 3. Date Standardization
 
 Dates were converted into ISO 8601 format:
 
 `YYYY-MM-DD`
 
- 4. Numeric Formatting
+## 4. Numeric Formatting
 
 UnitPrice and TotalPrice values were standardized to two decimal places.
 
- 5. Validation
+## 5. Validation
 
 The final dataset passed the validation checks:
 
