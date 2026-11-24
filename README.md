@@ -45,3 +45,24 @@ Dates were converted into ISO 8601 format:
 ## 4. Numeric Formatting
 
 UnitPrice and TotalPrice values were standardized to two decimal places.
+
+## 5. Validation
+
+The final dataset passed the validation checks:
+
+- Duplicate Orders: 0
+- Incorrectly formatted dates: 0
+
+## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- OpenPyXL
+
+## How to Run
+
+Install the required libraries:
+
+```bash
+pip install -r requirements.txt
